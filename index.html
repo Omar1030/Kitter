@@ -25,20 +25,25 @@
 <body>
     <!-- ========== Start Header ========== -->
     <header class="position-fixed w-100">
-        <div class="container d-flex align-items-center">
-            <a href="" class="logo f-carter-one text-white text-decoration-none">Kitter</a>
-            <nav class="d-flex justify-content-between flex-fill ps-4">
-                <ul class="nav-list list-unstyled d-flex text-white">
+        <div class="container d-flex justify-content-between align-items-center">
+            <i class="fa-solid fa-bars d-block d-lg-none"></i>
+            <a href="" class="logo f-carter-one text-decoration-none">Kitter</a>
+            <nav class="d-flex justify-content-between flex-lg-fill ps-4">
+                <ul class="nav-list list-unstyled d-flex">
+                    <div class="x-nav d-flex d-lg-none align-items-center px-4">
+                        <i class="fa-solid fa-xmark z-3"></i>
+                    </div>
                     <li>Home</li>
                     <li>Shop</li>
                     <li>Collections</li>
                     <li>Blogs</li>
                     <li>Contact</li>
+                    <button class="d-block d-lg-none position-fixed bottom-0 fw-semibold text-white border border-none py-3">LOG IN</button>
                 </ul>
                 <div class="nav-options">
                     <ul class="list-unstyled d-flex text-white">
                         <li><i class="fa-solid fa-magnifying-glass"></i></li>
-                        <li><i class="fa-regular fa-user"></i></li>
+                        <li class="d-none d-lg-block"><i class="fa-regular fa-user"></i></li>
                         <li><i class="fa-solid fa-bag-shopping"></i></li>
                     </ul>
                 </div>
@@ -47,6 +52,7 @@
     </header>
     <!-- ========== End Header ========== -->
 
+    
     <!-- ========== Start Main ========== -->
     <main>
         <!-- ===== Start Hero ===== -->
@@ -56,14 +62,20 @@
                     <span class="f-bagers text-white">High Quality</span>
                     <h1 class="f-bagers text-white">Pet Food</h1>
                     <p class="text-white">Sale up to 40% off today</p>
-                    <button class="btn bg-black">Shop Now</button>
+                    <button class="main-btn bg-black">Shop Now</button>
                 </div>
             </div>
         </section>
         <!-- ===== End Hero ===== -->
-        
+
+        <!-- ===== Start Category ===== -->
+        <section class="category py-5">
+            <h2 class="section-title text-center fw-bold"><span>Top</span> categories</h2>
+        </section>
+        <!-- ===== End Category ===== -->
     </main>
     <!-- ========== End Main ========== -->
+
 
     <!-- ========== Start Footer ========== -->
     <footer></footer>
