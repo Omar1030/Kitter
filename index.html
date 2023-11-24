@@ -13,6 +13,9 @@
     <!-- ========== Fontawesome Icons ========== -->
     <link rel="stylesheet" href="assets/CSS/all.min.css">
 
+    <!-- ========== Swiper CSS ========== -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
     <!-- ========== Bootstrap CSS ========== -->
     <link rel="stylesheet" href="assets/CSS/bootstrap.min.css">
 
@@ -20,7 +23,7 @@
     <link rel="stylesheet" href="assets/CSS/normalize.css">
 
     <!-- ========== Main CSS ========== -->
-    <link rel="stylesheet" href="assets/CSS/main.css">
+    <link rel="stylesheet" href="assets/CSS/style.css">
 </head>
 <body>
     <!-- ========== Start Header ========== -->
@@ -29,7 +32,7 @@
             <i class="fa-solid fa-bars d-block d-lg-none"></i>
             <a href="" class="logo f-carter-one text-decoration-none">Kitter</a>
             <nav class="d-flex justify-content-between flex-lg-fill ps-4">
-                <ul class="nav-list list-unstyled d-flex">
+                <!-- <ul class="nav-list list-unstyled d-flex">
                     <div class="x-nav d-flex d-lg-none align-items-center px-4">
                         <i class="fa-solid fa-xmark z-3"></i>
                     </div>
@@ -39,7 +42,7 @@
                     <li>Blogs</li>
                     <li>Contact</li>
                     <button class="d-block d-lg-none position-fixed bottom-0 fw-semibold text-white border border-none py-3">LOG IN</button>
-                </ul>
+                </ul> -->
                 <div class="nav-options">
                     <ul class="list-unstyled d-flex text-white">
                         <li><i class="fa-solid fa-magnifying-glass"></i></li>
@@ -70,9 +73,94 @@
 
         <!-- ===== Start Category ===== -->
         <section class="category py-5">
-            <h2 class="section-title text-center fw-bold"><span>Top</span> categories</h2>
+            <div class="custome-container">
+                <h2 class="section-title text-center fw-bold"><span>Top</span> categories</h2>
+                <div class="swiper swiper-category">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="product text-center">
+                                <div class="img"><img src="assets/imgs/category-1.jpg" alt="Cat-Food-img" class="w-100"></div>
+                                <span class="product-title d-block fw-semibold mt-2">Cat Food</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product text-center">
+                                <div class="img"><img src="assets/imgs/category-2.jpg" alt="Cat-Toys-img" class="w-100"></div>
+                                <span class="product-title d-block fw-semibold mt-2">Cat Toys</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product text-center">
+                                <div class="img"><img src="assets/imgs/category-3.jpg" alt="Dog-Food-img" class="w-100"></div>
+                                <span class="product-title d-block fw-semibold mt-2">Dog Food</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product text-center">
+                                <div class="img"><img src="assets/imgs/category-4.jpg" alt="Dog-Toys-img" class="w-100"></div>
+                                <span class="product-title d-block fw-semibold mt-2">Dog Toys</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product text-center">
+                                <div class="img"><img src="assets/imgs/category-5.jpg" alt="Dog-Supplements-img" class="w-100"></div>
+                                <span class="product-title d-block fw-semibold mt-2">Dog Supplements</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-scrollbar"></div>
+                </div>
+            </div>
         </section>
         <!-- ===== End Category ===== -->
+
+        <!-- ===== Start Offer ===== -->
+        <section class="offer py-5">
+            <div class="custome-container">
+                <div class="row row-gap-4">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="offer-card d-flex justify-content-center position-relative">
+                            <img src="assets/imgs/offer-banner-1.jpg" alt="offer1-img" class="w-100">
+                            <div class="offer-info position-absolute top-50 start-0 z-3 mx-3">
+                                <p class="fw-bold">SELECTED ITEMS. ONLINE ONLY.</p>
+                                <h3 class="fw-bold">Hot Summer <span class="d-block">Deals</span></h3>
+                                <button class="main-btn">Read More</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="offer-card d-flex justify-content-center position-relative">
+                            <img src="assets/imgs/offer-banner-2.jpg" alt="offer2-img" class="w-100">
+                            <div class="offer-info position-absolute top-50 start-0 z-3 mx-3">
+                                <p class="fw-bold">TREATS & GROOMING</p>
+                                <h3 class="fw-bold">Spoil your true <span class="d-block">love</span></h3>
+                                <button class="main-btn">Read More</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="offer-card d-flex justify-content-center position-relative">
+                            <img src="assets/imgs/offer-banner-3.jpg" alt="offer3-img" class="w-100">
+                            <div class="offer-info position-absolute top-50 start-0 z-3 mx-3">
+                                <p class="fw-bold">OUR BRAND YOU WILL LOVE</p>
+                                <h3 class="fw-bold">New in this <span class="d-block">Year</span></h3>
+                                <button class="main-btn">Read More</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        <!-- ===== End Offer ===== -->
+
+        <!-- ===== Start Product ===== -->
+        <section class="product py-5">
+            <div class="custome-container">
+                <h2 class="section-title text-center fw-bold"><span>Best</span> Seller</h2>
+            </div>
+        </section>
+        <!-- ===== End Product ===== -->
     </main>
     <!-- ========== End Main ========== -->
 
@@ -81,5 +169,13 @@
     <footer></footer>
     <!-- ========== End Footer ========== -->
     
+
+
+
+    <!-- ========== Swiper JS ========== -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- ========== Swiper JS ========== -->
+    <script src="assets/JS/dynamic.js"></script>
 </body>
 </html>
